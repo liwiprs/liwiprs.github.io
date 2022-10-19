@@ -152,6 +152,129 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-如何使用hexo和github来建立一个属于你的个人博客（小白向）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="如何使用hexo和github来建立一个属于你的个人博客（小白向）"><a href="#如何使用hexo和github来建立一个属于你的个人博客（小白向）" class="headerlink" title="如何使用hexo和github来建立一个属于你的个人博客（小白向）"></a>如何使用hexo和github来建立一个属于你的个人博客（小白向）</h1><h6 id="关于我为什么要写这篇文章："><a href="#关于我为什么要写这篇文章：" class="headerlink" title="关于我为什么要写这篇文章："></a>关于我为什么要写这篇文章：</h6><p>首先是我刚刚建好自己的博客，不想让自己的博客太空。其次，在我根据网上教程来建立自己的博客时，或多或少都遇到了一些问题。可能是因为一些必备插件的更新导致。那么在这篇文章中我会写下我个人遇到的问题。如果你在建立博客时遇到了与我不同的问题，那么你可以通过邮箱<a href="mailto:&#108;&#105;&#119;&#x69;&#112;&#x72;&#x73;&#64;&#x68;&#111;&#x74;&#109;&#x61;&#105;&#x2e;&#99;&#111;&#109;">&#108;&#105;&#119;&#x69;&#112;&#x72;&#x73;&#64;&#x68;&#111;&#x74;&#109;&#x61;&#105;&#x2e;&#99;&#111;&#109;</a>来联系我。这篇教程偏向于windows系统，mac系统大致相同。下面教程开始。</p>
+<h2 id="第一步：准备工作"><a href="#第一步：准备工作" class="headerlink" title="第一步：准备工作"></a>第一步：准备工作</h2><h3 id="首先，我们需要安装三个插件："><a href="#首先，我们需要安装三个插件：" class="headerlink" title="首先，我们需要安装三个插件："></a>首先，我们需要安装三个插件：</h3><h4 id="1：node-js"><a href="#1：node-js" class="headerlink" title="1：node.js"></a>1：node.js</h4><p>官网：node.js.org</p>
+<p>因为每个人可能遇到的问题不尽相同，所以这里为大家准备一篇csdn上的安装教程:<a target="_blank" rel="noopener" href="http://t.csdn.cn/mYmsp">http://t.csdn.cn/mYmsp</a> 如果这篇教程依旧无法解决你遇到的问题，那么请发邮件给我，我将尽我所能来解决你所遇到的问题。</p>
+<h4 id="2：git"><a href="#2：git" class="headerlink" title="2：git"></a>2：git</h4><p>官网：git-scm.com</p>
+<p>这里同样为大家准备一篇csdn上的安装教程:<a target="_blank" rel="noopener" href="http://t.csdn.cn/LMbPE">http://t.csdn.cn/LMbPE</a> 如果这篇教程依旧无法解决你遇到的问题，那么请发邮件给我，我将尽我所能来解决你所遇到的问题。</p>
+<h3 id="3：cnpm（这里可以直接用npm，但我个人用npm在后面的过程中出现了一些问题，所以我更推荐cnpm）"><a href="#3：cnpm（这里可以直接用npm，但我个人用npm在后面的过程中出现了一些问题，所以我更推荐cnpm）" class="headerlink" title="3：cnpm（这里可以直接用npm，但我个人用npm在后面的过程中出现了一些问题，所以我更推荐cnpm）"></a>3：cnpm（这里可以直接用npm，但我个人用npm在后面的过程中出现了一些问题，所以我更推荐cnpm）</h3><p>打开命令提示符（不会请自行百度）输入以下命令行</p>
+<p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
+<p>等待一会，然后输入以下命令：</p>
+<p><code>cnpm</code></p>
+<p>图片显示如下则成功。</p>
+<p><img src="C:\Users\mxgsl\AppData\Roaming\Typora\typora-user-images\image-20221019222427312.png" alt="image-20221019222427312"></p>
+<h3 id="4：检查插件是否安装成功"><a href="#4：检查插件是否安装成功" class="headerlink" title="4：检查插件是否安装成功"></a>4：检查插件是否安装成功</h3><p>网络黑客千千万，win+r占一半。win+r输入cmd打开命令提示符，输入以下三个命令：</p>
+<p><code>node -v</code></p>
+<p><code>git -v</code></p>
+<p><code>npm -v</code></p>
+<p>下面附上一张成功安装后显示的图片（若已安装cnpm，则忽略第三个命令。）</p>
+<p><img src="C:\Users\mxgsl\AppData\Roaming\Typora\typora-user-images\image-20221019221414587.png" alt="image-20221019221414587"></p>
+<h5 id="到这里，第一步准备工作完成"><a href="#到这里，第一步准备工作完成" class="headerlink" title="到这里，第一步准备工作完成"></a>到这里，第一步准备工作完成</h5><h2 id="第二步：搭建github仓库"><a href="#第二步：搭建github仓库" class="headerlink" title="第二步：搭建github仓库"></a>第二步：搭建github仓库</h2><h3 id="1：注册github账号"><a href="#1：注册github账号" class="headerlink" title="1：注册github账号"></a>1：注册github账号</h3><p>github官网：<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a></p>
+<p>不会注册的自行百度。这应该是最简单的</p>
+<p>请牢记自己的账号密码以及用户名。用户名请不要随便取，取个对你自己有意义的更好。后面会用到用户名。注册时若遇到网络问题建议使用Watt Toolkit一键加速，功能强大且免费。</p>
+<h3 id="2：新建仓库"><a href="#2：新建仓库" class="headerlink" title="2：新建仓库"></a>2：新建仓库</h3><p>这里会用到上文所提到的用户名，如果对自己的用户名不满意，请赶紧从新注册。</p>
+<p>新建的仓库名格式必须为：用户名.github.io</p>
+<p>同时勾选Add a REDME file</p>
+<p>如图<img src="C:\Users\mxgsl\AppData\Roaming\Typora\typora-user-images\image-20221019225834198.png" alt="image-20221019225834198"></p>
+<h3 id="3：生成SSH-Keys"><a href="#3：生成SSH-Keys" class="headerlink" title="3：生成SSH Keys"></a>3：生成SSH Keys</h3><p>任意打开一个文件夹，在空白处鼠标右键，点击git bush here 如果没有，请点击显示更多选项。在其中输入以下命令行并敲四次Enter：</p>
+<p><code>ssh-keygen -t rsa -C &quot;你注册github时的邮箱&quot;</code></p>
+<p>（不要关闭这个窗口）</p>
+<p>搜索 .ssh 文件夹并进入打开其中的pub文件并全选复制其中内容，然后打开github设置界面，找到SSH and GPG keys 。点击new SSH keys 。在key一栏粘贴刚刚复制的内容（不要随意删减任何内容），Title一栏随意填写。最后点击Add SSH key 。</p>
+<h3 id="4：检查ssh是否绑定成功"><a href="#4：检查ssh是否绑定成功" class="headerlink" title="4：检查ssh是否绑定成功"></a>4：检查ssh是否绑定成功</h3><p>在刚刚打开的git bush here窗口输入以下命令：</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>按一次Enter后稍等一会输入yes</p>
+<p>若成功，则最后一行会显示以下代码</p>
+<p><code>Hi github用户名！ You’ve successfully authenticated</code></p>
+<h5 id="到这里，第二步完成"><a href="#到这里，第二步完成" class="headerlink" title="到这里，第二步完成"></a>到这里，第二步完成</h5><h2 id="第三步：生成本地博客"><a href="#第三步：生成本地博客" class="headerlink" title="第三步：生成本地博客"></a>第三步：生成本地博客</h2><h3 id="1：-安装hexo"><a href="#1：-安装hexo" class="headerlink" title="1： 安装hexo"></a>1： 安装hexo</h3><p>新建一个文件夹，这个文件夹一定要放在你容易找到到的地方。以后的大多数操作都要在这个文件夹中完成。</p>
+<p>在你新建的这个文件夹右键，点击git bush here 输入以下命令：</p>
+<p><code>hexo -v</code></p>
+<p>若已安装hexo，则显示如下图：</p>
+<p><img src="C:\Users\mxgsl\AppData\Roaming\Typora\typora-user-images\image-20221019234937293.png" alt="image-20221019234937293"></p>
+<p>若未安装，则输入下列命令进行安装，然后进行上一步进行检查。</p>
+<p><code>npm install -g hexo</code></p>
+<h3 id="2：初始化hexo"><a href="#2：初始化hexo" class="headerlink" title="2：初始化hexo"></a>2：初始化hexo</h3><p>继续在刚刚的命令框中输入以下命令：</p>
+<p><code>hexo init</code></p>
+<p>可能需要多输入几次。因为github毕竟不在国内。这一步完成后你新建的文件夹内会多出一些文件。如下图</p>
+<p><img src="C:\Users\mxgsl\AppData\Roaming\Typora\typora-user-images\image-20221019235723899.png" alt="image-20221019235723899"></p>
+<h3 id="3：打开本地服务器进行预览"><a href="#3：打开本地服务器进行预览" class="headerlink" title="3：打开本地服务器进行预览"></a>3：打开本地服务器进行预览</h3><p>继续在刚才的命令框输入以下命令：</p>
+<p><code>hexo s</code></p>
+<p>这时会显示如下图所示：</p>
+<p><img src="C:\Users\mxgsl\AppData\Roaming\Typora\typora-user-images\image-20221020000018376.png" alt="image-20221020000018376"></p>
+<p>复制下划线上的字符，打开浏览器复制粘贴并回车，你就可以看到你前面努力的成果。</p>
+<p>若你对自己的博客不够满意，则Ctrl+C关闭本地服务器进行修改（修改方法可自行百度，当然，这一般是你在发布到远端时才会用到的。）</p>
+<h6 id="到这里，第三步完成。"><a href="#到这里，第三步完成。" class="headerlink" title="到这里，第三步完成。"></a>到这里，第三步完成。</h6><h2 id="第四步：发布博客到远端"><a href="#第四步：发布博客到远端" class="headerlink" title="第四步：发布博客到远端"></a>第四步：发布博客到远端</h2><h6 id="在这一步现有的许多教程或多或少会因为一些工具的更新出现一些问题，所以大家一定要仔细操作。"><a href="#在这一步现有的许多教程或多或少会因为一些工具的更新出现一些问题，所以大家一定要仔细操作。" class="headerlink" title="在这一步现有的许多教程或多或少会因为一些工具的更新出现一些问题，所以大家一定要仔细操作。"></a>在这一步现有的许多教程或多或少会因为一些工具的更新出现一些问题，所以大家一定要仔细操作。</h6><h3 id="1：准备工作"><a href="#1：准备工作" class="headerlink" title="1：准备工作"></a>1：准备工作</h3><p>安装自动部署发布工具：同样打开git bush here输入以下命令：</p>
+<p><code>npm install hexo -deployer-git --save</code></p>
+<p>这一步可能有点慢或者会出现错误，不要慌张，多来几次。毕竟github懂得都懂</p>
+<p>然后我们需要替换一个文件，这个文件我会放在文章最后，需要的可以自取。如果你动手能力强，那么也可以自己修改这个文件，修改方法如下：</p>
+<ol>
+<li><p>首先用文本编辑器打开博客文件夹（第三步新建的文件夹）中的 <strong>_config.yml</strong> 配置文件</p>
+</li>
+<li><p>修改配置文件中的<strong>repo</strong>将其修改为  <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;</a>:YourName&#x2F;YourName.github.io.git</p>
+</li>
+<li><p>删除其中最后两行并复制以下内容粘贴（每个冒号必须为英文冒号，请自行替换;每个冒号后需空格一次再输入内容。我这里没有空格。）：</p>
+<p>deploy：</p>
+<p>​    type： git</p>
+<p>​    repository：<a target="_blank" rel="noopener" href="https://github.com/github%E7%94%A8%E6%88%B7%E5%90%8D/github%E7%94%A8%E6%88%B7%E5%90%8D.github.io.git">https://github.com/github用户名/github用户名.github.io.git</a></p>
+<p>​    branch：main</p>
+</li>
+</ol>
+<p>2：生成页面：</p>
+<p>继续在git bush here命令框输入以下命令：</p>
+<p><code>hexo g</code></p>
+<p>回车</p>
+<p>3：上传本地文件到github仓库：</p>
+<p>继续在git bush here命令框输入以下命令：</p>
+<p><code>hexo d</code></p>
+<p>若失败则继续。github懂得都懂。</p>
+<p>4：通过网址访问你的博客：</p>
+<p>博客网址为： 用户名.github.io</p>
+<h2 id="到这里，恭喜你拥有了属于自己的博客网站。当然，也许在你建立个人博客时会遇到各种各样的问题，这些问题大多数是可以通过百度解决的。若百度后无法解决，可以给我发送电子邮件。"><a href="#到这里，恭喜你拥有了属于自己的博客网站。当然，也许在你建立个人博客时会遇到各种各样的问题，这些问题大多数是可以通过百度解决的。若百度后无法解决，可以给我发送电子邮件。" class="headerlink" title="到这里，恭喜你拥有了属于自己的博客网站。当然，也许在你建立个人博客时会遇到各种各样的问题，这些问题大多数是可以通过百度解决的。若百度后无法解决，可以给我发送电子邮件。"></a>到这里，恭喜你拥有了属于自己的博客网站。当然，也许在你建立个人博客时会遇到各种各样的问题，这些问题大多数是可以通过百度解决的。若百度后无法解决，可以给我发送电子邮件。</h2><h1 id="下集预告：博客美化。（我自己懒得搞，但这刚好可以边美化我自己的边发现一些问题，避免大家遇到一些无法解决的困难。）"><a href="#下集预告：博客美化。（我自己懒得搞，但这刚好可以边美化我自己的边发现一些问题，避免大家遇到一些无法解决的困难。）" class="headerlink" title="下集预告：博客美化。（我自己懒得搞，但这刚好可以边美化我自己的边发现一些问题，避免大家遇到一些无法解决的困难。）"></a>下集预告：博客美化。（我自己懒得搞，但这刚好可以边美化我自己的边发现一些问题，避免大家遇到一些无法解决的困难。）</h1>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/10/19/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E6%9D%A5%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%B0%8F%E7%99%BD%E5%90%91%EF%BC%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-“我的第一篇博客”" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
