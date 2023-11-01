@@ -190,17 +190,17 @@
 <p>新建的仓库名格式必须为：用户名.github.io</p>
 <p>同时勾选Add a REDME file</p>
 <p>如图<img src="C:\Users\mxgsl\AppData\Roaming\Typora\typora-user-images\image-20221019225834198.png" alt="image-20221019225834198"></p>
-<h3 id="3：生成SSH-Keys"><a href="#3：生成SSH-Keys" class="headerlink" title="3：生成SSH Keys"></a>3：生成SSH Keys</h3><p>任意打开一个文件夹，在空白处鼠标右键，点击git bush here 如果没有，请点击显示更多选项。在其中输入以下命令行并敲四次Enter：</p>
+<h3 id="3：生成SSH-Keys"><a href="#3：生成SSH-Keys" class="headerlink" title="3：生成SSH Keys"></a>3：生成SSH Keys</h3><p>任意打开一个文件夹，在空白处鼠标右键，点击git bash here 如果没有，请点击显示更多选项。在其中输入以下命令行并敲四次Enter：</p>
 <p><code>ssh-keygen -t rsa -C &quot;你注册github时的邮箱&quot;</code></p>
 <p>（不要关闭这个窗口）</p>
 <p>搜索 .ssh 文件夹并进入打开其中的pub文件并全选复制其中内容，然后打开github设置界面，找到SSH and GPG keys 。点击new SSH keys 。在key一栏粘贴刚刚复制的内容（不要随意删减任何内容），Title一栏随意填写。最后点击Add SSH key 。</p>
-<h3 id="4：检查ssh是否绑定成功"><a href="#4：检查ssh是否绑定成功" class="headerlink" title="4：检查ssh是否绑定成功"></a>4：检查ssh是否绑定成功</h3><p>在刚刚打开的git bush here窗口输入以下命令：</p>
+<h3 id="4：检查ssh是否绑定成功"><a href="#4：检查ssh是否绑定成功" class="headerlink" title="4：检查ssh是否绑定成功"></a>4：检查ssh是否绑定成功</h3><p>在刚刚打开的git bash here窗口输入以下命令：</p>
 <p><code>ssh -T git@github.com</code></p>
 <p>按一次Enter后稍等一会输入yes</p>
 <p>若成功，则最后一行会显示以下代码</p>
 <p><code>Hi github用户名！ You’ve successfully authenticated</code></p>
 <h5 id="到这里，第二步完成"><a href="#到这里，第二步完成" class="headerlink" title="到这里，第二步完成"></a>到这里，第二步完成</h5><h2 id="第三步：生成本地博客"><a href="#第三步：生成本地博客" class="headerlink" title="第三步：生成本地博客"></a>第三步：生成本地博客</h2><h3 id="1：-安装hexo"><a href="#1：-安装hexo" class="headerlink" title="1： 安装hexo"></a>1： 安装hexo</h3><p>新建一个文件夹，这个文件夹一定要放在你容易找到到的地方。以后的大多数操作都要在这个文件夹中完成。</p>
-<p>在你新建的这个文件夹右键，点击git bush here 输入以下命令：</p>
+<p>在你新建的这个文件夹右键，点击git bash here 输入以下命令：</p>
 <p><code>hexo -v</code></p>
 <p>若已安装hexo，则显示如下图：</p>
 <p><img src="C:\Users\mxgsl\AppData\Roaming\Typora\typora-user-images\image-20221019234937293.png" alt="image-20221019234937293"></p>
@@ -237,7 +237,7 @@
 <p><code>hexo g</code></p>
 <p>回车</p>
 <p>3：上传本地文件到github仓库：</p>
-<p>继续在git bush here命令框输入以下命令：</p>
+<p>继续在git bash here命令框输入以下命令：</p>
 <p><code>hexo d</code></p>
 <p>若失败则继续。github懂得都懂。</p>
 <p>4：通过网址访问你的博客：</p>
